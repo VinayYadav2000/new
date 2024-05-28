@@ -3,286 +3,128 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bootstrap 5.3 Page</title>
-    <!-- Bootstrap CSS -->
+    <title>Document</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Font Awesome -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+   
+
+        
+        <link rel="stylesheet" href="css/all.min.css">
+    
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="styles.css">
-    <style>
 
-.carousel-item img{
-  height: 500px;
-  width: 100%;
-}
-.carousel-item a{
-  text-decoration: none;
-  border-radius: 10px;
-  /* padding: 10px; */
-}
-
-
-.carousel-caption {
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    background: rgba(15, 66, 41, .6);
-    z-index: 1;
-}
-
-.carousel-control-prev,
-.carousel-control-next {
-    width: 15%;
-}
-
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-    width: 3rem;
-    height: 3rem;
-    border-radius: 3rem;
-    background-color: red;
-    border: 2px solid white;
-}
-
-@media (max-width: 768px) {
-    #header-carousel .carousel-item {
-        position: relative;
-        min-height: 450px;
-    }
-    
-    #header-carousel .carousel-item img {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-    }
-}
-
-.page-header {
-    background: linear-gradient(rgba(15, 66, 41, .6), rgba(15, 66, 41, .6)), url(../img/carousel-1.jpg) center center no-repeat;
-    background-size: cover;
-}
-
-.page-header .breadcrumb-item+.breadcrumb-item::before {
-    color: var(--light);
-}
-
-.page-header .breadcrumb-item,
-.page-header .breadcrumb-item a {
-    font-size: 18px;
-    color: var(--light);
-}
-
-:root {
-    --primary: #348E38;
-    --secondary: #525368;
-    --light: #E8F5E9;
-    --dark: #0F4229;
-}
-
-
-
-
-/*** Button ***/
-.btn {
-    transition: .5s;
-    font-weight: 500;
-}
-
-.btn-primary,
-.btn-outline-primary:hover {
-    color: var(--light);
-}
-
-.btn-square {
-    width: 38px;
-    height: 38px;
-}
-
-.btn-sm-square {
-    width: 32px;
-    height: 32px;
-}
-
-.btn-lg-square {
-    width: 48px;
-    height: 48px;
-}
-
-.btn-square,
-.btn-sm-square,
-.btn-lg-square {
-    padding: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: normal;
-}
-/* //////////////////////////////////////// */
-/*--------------------------------------------------------------
-# Features Section
---------------------------------------------------------------*/
-/* Global Colors */
-:root {
-  /* Background Color - This color is applied to the background of the entire website as well as individual sections. */
-  --background-color: #ffffff;
-
-  /* Default Color - This is the default color used for the majority of the text content. */
-  --default-color: #3d4348;
-
-  /* Heading Color - This color is used for titles, headings and secondary elements. */
-  --heading-color: #3e5055;
-
-  /* Accent Color - This is the main accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out. */
-  --accent-color: #f3f0f2;
-
-  /* Contrast Color - This is a color used for text when the background color is one of the heading, accent, or default colors. Its purpose is to ensure proper contrast and readability when placed over these more dominant colors. */
-  --contrast-color:red;
-}
-.features .nav-tabs {
-  border: 0;
-}
-
-.features .nav-item {
-  width: 100%;
-  margin-bottom: 15px;
-}
-
-.features .nav-item:last-child {
-  margin-bottom: 0;
-}
-
-.features .nav-link {
-  color: var(--heading-color);
-  border: 0;
-  padding: 30px;
-  transition: 0.3s;
-  border-radius: 10px;
-  display: flex;
-  cursor: pointer;
-}
-
-.features .nav-link i {
-  background-color: var(--contrast-color);
-  color: var(--accent-color);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-right: 20px;
-  width: 48px;
-  height: 48px;
-  font-size: 22px;
-  flex-shrink: 0;
-  border-radius: 50px;
-  box-shadow: 0 2px 4px color-mix(in srgb, var(--default-color), transparent 85%);
-}
-
-.features .nav-link h4 {
-  font-size: 20px;
-  font-weight: 600;
-  margin: 0 0 10px 0;
-  transition: 0.3s;
-}
-
-.features .nav-link p {
-  font-size: 15px;
-  margin: 0;
-}
-
-.features .nav-link:hover {
-  background: color-mix(in srgb, var(--accent-color), transparent 96%);
-}
-
-.features .nav-link.active {
-  background: color-mix(in srgb, var(--accent-color), transparent 92%);
-}
-
-.features .tab-pane img {
-  border-radius: 15px;
-}
-
-/*--------------------------------------------------------------
-# Features Details Section
---------------------------------------------------------------*/
-.features-details .features-item+.features-item {
-  margin-top: 60px;
-}
-
-.features-details .features-item .content {
-  background-color: color-mix(in srgb, var(--accent-color), transparent 95%);
-  color: color-mix(in srgb, var(--default-color), transparent 40%);
-  padding: 30px;
-  border-radius: 10px;
-}
-
-.features-details .features-item h3 {
-  font-weight: 700;
-  font-size: 26px;
-  margin-bottom: 15px;
-}
-
-.features-details .features-item .more-btn {
-  background-color: red;
-  color:white;
-  padding: 6px 30px;
-  border-radius: 6px;
-}
-
-.features-details .features-item .more-btn:hover {
-  background-color: color-mix(in srgb, var(--accent-color), transparent 20%);
-}
-
-.features-details .features-item ul {
-  list-style: none;
-  padding: 0;
-}
-
-.features-details .features-item ul li {
-  padding-bottom: 10px;
-  display: flex;
-  align-items: center;
-}
-
-.features-details .features-item ul li:last-child {
-  padding-bottom: 0;
-}
-
-.features-details .features-item ul i {
-  font-size: 20px;
-  margin-right: 10px;
-  color: var(--accent-color);
-}
-
-.features-details .features-item img {
-  border-radius: 15px;
-}
-
-    </style>
-    
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    
+    <!-- Topbar Start -->
+    <div class="container-fluid bg-dark text-light px-0 py-2">
+        <div class="row gx-0 d-none d-lg-flex">
+            <div class="col-lg-7 px-5 text-start">
+                <div class="h-100 d-inline-flex align-items-center me-4">
+                    <span class="fa fa-phone-alt me-2"></span>
+                    <span>+91-2164-258205</span>
+                </div>
+                <div class="h-100 d-inline-flex align-items-center">
+                    <span class="far fa-envelope me-2"></span>
+                    <span>Email : contact@aufl.in</span>
+                </div>
+            </div>
+            <div class="col-lg-5 px-5 text-end">
+                <div class="h-100 d-inline-flex align-items-center mx-n2">
+                    <span>Follow Us:</span>
+                    <a class="btn btn-link text-light" href=""><i class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-link text-light" href=""><i class="fab fa-twitter"></i></a>
+                    <a class="btn btn-link text-light" href=""><i class="fab fa-linkedin-in"></i></a>
+                    <a class="btn btn-link text-light" href=""><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Topbar End -->
+
+
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top p-0">
+        <a href="index.html" class="navbar-brand d-flex align-items-center px-3 px-lg-5">
+            <img src="images/logo.png" alt="" class="img-fluid">
+        </a>
+        <button type="button" class="navbar-toggler me-4 but" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ms-auto p-4 p-lg-0">
+                <a href="index.html" class="nav-item nav-link active">Home</a>
+                <div class="nav-item dropdown">
+                    <a href="about.html" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">About</a>
+                    <div class="dropdown-menu bg-light m-0">
+                      <a href="about.html" class="dropdown-item">About</a>
+                        <a href="#" class="dropdown-item">Quality</a>
+                        <a href="#" class="dropdown-item">R &D</a>
+                       
+                    </div>
+                </div>
+                <div class="nav-item dropdown">
+                    <a href="service.html" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Services</a>
+                    <div class="dropdown-menu bg-light m-0">
+                        <a href="#" class="dropdown-item">Manufacturing</a>
+                        <a href="#" class="dropdown-item">Exports</a>
+                       
+                    </div>
+                </div>
+                <a href="#" class="nav-item nav-link">Product</a>
+                <a href="contact.html" class="nav-item nav-link">Contact</a>
+            </div>
+           
+        </div>
+    </nav>
+    <!-- Navbar End -->
+<!-- start main section -->
+
 
 <!-- Hero Section -->
  <!-- Carousel Start -->
  <div class="container-fluid p-0 wow fadeIn" data-wow-delay="0.1s">
-  <div id="header-carousel" class="carousel slide" data-bs-ride="carousel">
-      <div class="carousel-inner">
-          <div class="carousel-item active">
-              <img class="w-100" src="images/3.jpg" alt="Image">
+    <div id="header-carousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img class="w-100" src="images/3.jpg" alt="Image">
+                <div class="carousel-caption">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8 colsm-12 pt-5">
+                              <h5> <a href=""  class="bg-danger text-white p-2 fs-6">GLOBAL LEADER IN</a></h5>
+                                <h5 class="display-1 text-white mb-5 animated slideInDown fs-1 fw-bold">Design your Products with our Quality customized 100% Cotton Greige Canvas Fabrics</h5>
+                               
+                                <p></p>
+                                <a href="" class="btn btn-danger py-sm-3 px-sm-4">Explore More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img class="w-100" src="images/4.jpg" alt="Image">
+                <div class="carousel-caption">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-7 colsm-12 pt-5">
+                              <h5> <a href=""  class="bg-danger text-white p-2 fs-6">GLOBAL LEADER IN</a></h5>
+                                <h1 class="display-1 text-white mb-5 animated slideInDown fs-1 fw-bold">Wider width Fabrics</h1>
+                                
+                                <a href="" class="btn btn-danger py-sm-3 px-sm-4">Explore More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+              <img class="w-100" src="images/9.jpg" alt="Image">
               <div class="carousel-caption">
                   <div class="container">
                       <div class="row justify-content-center">
-                          <div class="col-lg-8">
+                          <div class="col-lg-7 colsm-12 pt-5">
                             <h5> <a href=""  class="bg-danger text-white p-2 fs-6">GLOBAL LEADER IN</a></h5>
-                              <h5 class="display-1 text-white mb-5 animated slideInDown fs-1 fw-bold">Design your Products with our Quality customized 100% Cotton Greige Canvas Fabrics</h5>
-                             
-                              <p></p>
+                            <h1 class="display-1 text-white mb-5 animated slideInDown fs-1 fw-bold">Artist Canvas</h1>
                               <a href="" class="btn btn-danger py-sm-3 px-sm-4">Explore More</a>
                           </div>
                       </div>
@@ -290,28 +132,15 @@
               </div>
           </div>
           <div class="carousel-item">
-              <img class="w-100" src="images/4.jpg" alt="Image">
-              <div class="carousel-caption">
-                  <div class="container">
-                      <div class="row justify-content-center">
-                          <div class="col-lg-7">
-                            <h5> <a href=""  class="bg-danger text-white p-2 fs-6">GLOBAL LEADER IN</a></h5>
-                              <h1 class="display-1 text-white mb-5 animated slideInDown fs-1 fw-bold">Wider width Fabrics</h1>
-                              
-                              <a href="" class="btn btn-danger py-sm-3 px-sm-4">Explore More</a>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-          </div>
-          <div class="carousel-item">
-            <img class="w-100" src="images/9.jpg" alt="Image">
+            <img class="w-100" src="images/1.jpg" alt="Image">
             <div class="carousel-caption">
                 <div class="container">
                     <div class="row justify-content-center">
-                        <div class="col-lg-7">
+                        <div class="col-lg-7 colsm-12 pt-5">
                           <h5> <a href=""  class="bg-danger text-white p-2 fs-6">GLOBAL LEADER IN</a></h5>
-                          <h1 class="display-1 text-white mb-5 animated slideInDown fs-1 fw-bold">Artist Canvas</h1>
+                            <h1 class="display-1 text-white mb-5 animated slideInDown fs-1 fw-bold">100% Cotton Greige Canvas Fabrics</h1>
+                            <p class="fw-bolder">AUFL is well aware of the expectations of the international customers and has realised the place of quality deeply.</p>
+                            
                             <a href="" class="btn btn-danger py-sm-3 px-sm-4">Explore More</a>
                         </div>
                     </div>
@@ -319,14 +148,13 @@
             </div>
         </div>
         <div class="carousel-item">
-          <img class="w-100" src="images/1.jpg" alt="Image">
+          <img class="w-100" src="images/bags.jpg" alt="Image">
           <div class="carousel-caption">
               <div class="container">
                   <div class="row justify-content-center">
-                      <div class="col-lg-7">
+                      <div class="col-lg-7 colsm-12 pt-5">
                         <h5> <a href=""  class="bg-danger text-white p-2 fs-6">GLOBAL LEADER IN</a></h5>
-                          <h1 class="display-1 text-white mb-5 animated slideInDown fs-1 fw-bold">100% Cotton Greige Canvas Fabrics</h1>
-                          <p>AUFL is well aware of the expectations of the international customers and has realised the place of quality deeply.</p>
+                          <h1 class="display-1 text-white mb-5 animated slideInDown fs-1 fw-bold">COTTON CANVAS BAGS</h1>
                           
                           <a href="" class="btn btn-danger py-sm-3 px-sm-4">Explore More</a>
                       </div>
@@ -334,146 +162,187 @@
               </div>
           </div>
       </div>
-      <div class="carousel-item">
-        <img class="w-100" src="images/bags.jpg" alt="Image">
-        <div class="carousel-caption">
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-lg-7">
-                      <h5> <a href=""  class="bg-danger text-white p-2 fs-6">GLOBAL LEADER IN</a></h5>
-                        <h1 class="display-1 text-white mb-5 animated slideInDown fs-1 fw-bold">COTTON CANVAS BAGS</h1>
-                        
-                        <a href="" class="btn btn-danger py-sm-3 px-sm-4">Explore More</a>
+        </div>
+        
+  </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#header-carousel"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#header-carousel"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+  </div>
+  <!-- Carousel End -->
+  
+  <!-- Certification Section -->
+  
+  
+  <!-- About Section -->
+  <section id="features-details" class="features-details section pt-5">
+      <div class="container">
+          <div class="row gy-4 justify-content-between features-item">
+  
+          <div class="col-lg-6 p-5 col-sm-12 " data-aos="fade-up" data-aos-delay="100">
+            <img src="images/aufl.jpg" class="img-fluid rounded-3" alt="">
+          </div>
+  
+          <div class="col-lg-5 col-sm-12" data-aos="fade-up" data-aos-delay="200">
+            <div class="content">
+              <h6>Welcome To AUFL</h6>
+              <h3  class="fw-bolder">ABOUT US</h3>
+              <p>
+                  Since 1998, Ajanta Universal Fabrics Limited has been thriving to bring maximum excellence in its products. AUFL is well aware of the expectations of the international customers and has realised the place of quality deeply.
+              </p>
+              <p>Greige cotton fabric is used extensively in various industrial applications like Awnings, Banners, Construction, Filtration, Flags, Military, Packaging, Safety & Protective, Tents, Abrasives etc. AUFL's Greige cotton fabric is used for all these applications. AUFL's Greige fabrics are being exported. It has a simultaneously presence in the domestic market.</p>
+              <a href="#" class="btn more-btn btn-danger">Learn More</a>
+            </div>
+          </div>
+  
+        </div>
+      </div>
+  </section>
+  
+  <section class="certification-section pt-5">
+      <div class="container">
+          <h3 class="text-center pb-5 fw-bolder" style="color: #3d4348;">Certification</h3>
+         <div class="row text-center">
+          <div class="col-md-3 col-sm-12 pb-4"><img src="images/dsxyhlkyl.png" alt="" class="img-fluid"></div>
+          <div class="col-md-3 col-sm-12 pb-5"><img src="images/iso.png" alt="" class="img-fluid"></div>
+          <div class="col-md-3 col-sm-12 pb-5"><img src="images/gots.png" alt="" class="img-fluid"></div>
+          <div class="col-md-3 col-sm-12 pb-5"><img src="images/bci.png" alt="" class="img-fluid"></div>
+         </div>
+      </div>
+  </section>
+  
+  <!-- Specialization Section -->
+    
+    <section id="features-details" class="features-details section pt-5">
+  
+      <div class="container">
+  
+        <div class="row gy-4 justify-content-between features-item">
+  
+          <div class="col-lg-6 p-5 rounded-3 col-sm-12" data-aos="fade-up" data-aos-delay="100">
+            <img src="images/aufl.jpg" class="img-fluid rounded-3" alt="">
+          </div>
+  
+          <div class="col-lg-5 d-flex align-items-center col-sm-12" data-aos="fade-up" data-aos-delay="200">
+            <div class="content">
+  
+              <h3 class="fw-bolder">SPECIALTY</h3>
+              <p>
+                  We Ajanta sale our fabric and yarn on our own brand name all over the world.
+              </p>
+              <p>We are proud members various national and international textile organizations</p>
+              <ul>
+                  <li><i class="bi bi-easel flex-shrink-0"></i> BIG SIZE CONTINUOUS LENGTH ROLL HANDLING</li>
+                  <li><i class="bi bi-patch-check flex-shrink-0"></i> HEAVIEST AND WIDEST FABRIC.</li>
+                  <li><i class="bi bi-brightness-high flex-shrink-0"></i> CONTAMINATION FREE FABRIC</li>
+                  <li><i class="bi bi-brightness-high flex-shrink-0"></i>PROMPT DELIVERY</li>
+                  <li><i class="bi bi-brightness-high flex-shrink-0"></i>CUSTOMIZED FABRICS</li>
+                </ul>
+              <a href="#" class="btn more-btn btn-danger">Learn More</a>
+            </div>
+          </div>
+  
+        </div>
+      </section>
+      <!-- Features Item -->
+      <section class="bgimg">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4 mt-4">
+              <div class="box p-3">
+                <h5 class="text-center fw-bolder">SPECIALITY</h5>
+                <p>We Ajanta sale our fabric and yarn on our own brand name all over the world</p>
+                <p>We are proud members various national and international textile organizations</p>
+                <ul>
+                  <li>Big Size Continuous Length Roll Handling</li>
+                  <li>Heaviest And Widest Fabric</li>
+                  <li>Contamination Free Fabric</li>
+                  <li>Prompt Delivery</li>
+                  <li>Customized Fabrics</li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-8"></div>
+          </div>
+        </div>
+      </section>
+  
+  
+  
+
+
+<!-- end main section -->
+<!-- Footer Start -->
+<div class="container-fluid  text-light footer mt-5 py-5 wow fadeIn" data-wow-delay="0.1s">
+    <div class="container py-5">
+        <div class="row g-5">
+            <div class="col-lg-4 col-md-6">
+                <h4 class="text-white mb-4">AJANTA UNIVERSAL FABRICS LIMITED.</h4>
+                <p class="mb-2">Plot No. B-60 to B-63,B-71,B-177 & B-177/1</p>
+                <p class="mb-2">Opp. Water Treatment Plant,</p>
+                <p class="mb-2">Tasawade MIDC, Post - Umbraj - 415 109, </p>
+                <p class="mb-2">Tal - Karad, Dist - Satara, Maharashtra,INDIA.</p>
+                <a href="mailto:contact@aufl.in" class="email">Email : contact@aufl.in</a>
+                
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class=" text-left ">
+                    <div class="single-footer-widget">
+                       <a href="pdf/AUFL-Company-Profile-NEW.pdf" target="_blank">  <img src="images/download.png"> </a>        
                     </div>
-                </div>
+                 </div>
+            </div>
+            <div class="col-lg-2 col-md-6">
+                <h4 class="text-white mb-4">Quick Links</h4>
+                <a class="btn btn-link" href="">About Us</a>
+                <a class="btn btn-link" href="">Contact Us</a>
+                <a class="btn btn-link" href="">Services</a>
+                <a class="btn btn-link" href="">Product</a>
+                <!-- <a class="btn btn-link" href="">Manufacturing</a> -->
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <p><strong><img src="images/Techtextil.jpg" width="184" height="54"><br>
+                    TECHTEXTIL GERMANY 2024</strong><br>
+                    Frankfurt, Germany<br>
+                    April 23 - 26, 2024<br>
+                    Hall # 12.1, Stall # D62<br>
+                    <a title="Details" class="btn btn-primary" href="events.php"> Click for Details</a>            
+                </p>
             </div>
         </div>
     </div>
-      </div>
-      
-</div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#header-carousel"
-          data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#header-carousel"
-          data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-      </button>
-  </div>
-</div>
-<!-- Carousel End -->
-
-<!-- Certification Section -->
+</div> 
+<!-- Footer End -->
 
 
-<!-- About Section -->
-<section id="features-details" class="features-details section pt-5">
+<!-- Copyright Start -->
+<div class="container-fluid copyright py-4">
     <div class="container">
-        <div class="row gy-4 justify-content-between features-item">
-
-        <div class="col-lg-6 p-5 col-sm-12 " data-aos="fade-up" data-aos-delay="100">
-          <img src="images/aufl.jpg" class="img-fluid rounded-3" alt="">
-        </div>
-
-        <div class="col-lg-5 col-sm-12" data-aos="fade-up" data-aos-delay="200">
-          <div class="content">
-            <h6>Welcome To AUFL</h6>
-            <h3  class="fw-bolder">ABOUT US</h3>
-            <p>
-                Since 1998, Ajanta Universal Fabrics Limited has been thriving to bring maximum excellence in its products. AUFL is well aware of the expectations of the international customers and has realised the place of quality deeply.
-            </p>
-            <p>Greige cotton fabric is used extensively in various industrial applications like Awnings, Banners, Construction, Filtration, Flags, Military, Packaging, Safety & Protective, Tents, Abrasives etc. AUFL's Greige cotton fabric is used for all these applications. AUFL's Greige fabrics are being exported. It has a simultaneously presence in the domestic market.</p>
-            <a href="#" class="btn more-btn btn-danger">Learn More</a>
-          </div>
-        </div>
-
-      </div>
-    </div>
-</section>
-
-<section class="certification-section pt-5">
-    <div class="container">
-        <h3 class="text-center pb-5 fw-bolder" style="color: #3d4348;">Certification</h3>
-       <div class="row text-center">
-        <div class="col-md-3 col-sm-12 pb-4"><img src="images/dsxyhlkyl.png" alt="" class="img-fluid"></div>
-        <div class="col-md-3 col-sm-12 pb-5"><img src="images/iso.png" alt="" class="img-fluid"></div>
-        <div class="col-md-3 col-sm-12 pb-5"><img src="images/gots.png" alt="" class="img-fluid"></div>
-        <div class="col-md-3 col-sm-12 pb-5"><img src="images/bci.png" alt="" class="img-fluid"></div>
-       </div>
-    </div>
-</section>
-
-<!-- Specialization Section -->
-  
-  <section id="features-details" class="features-details section pt-5">
-
-    <div class="container">
-
-      <div class="row gy-4 justify-content-between features-item">
-
-        <div class="col-lg-6 p-5 rounded-3 col-sm-12" data-aos="fade-up" data-aos-delay="100">
-          <img src="images/aufl.jpg" class="img-fluid rounded-3" alt="">
-        </div>
-
-        <div class="col-lg-5 d-flex align-items-center col-sm-12" data-aos="fade-up" data-aos-delay="200">
-          <div class="content">
-
-            <h3 class="fw-bolder">SPECIALTY</h3>
-            <p>
-                We Ajanta sale our fabric and yarn on our own brand name all over the world.
-            </p>
-            <p>We are proud members various national and international textile organizations</p>
-            <ul>
-                <li><i class="bi bi-easel flex-shrink-0"></i> BIG SIZE CONTINUOUS LENGTH ROLL HANDLING</li>
-                <li><i class="bi bi-patch-check flex-shrink-0"></i> HEAVIEST AND WIDEST FABRIC.</li>
-                <li><i class="bi bi-brightness-high flex-shrink-0"></i> CONTAMINATION FREE FABRIC</li>
-                <li><i class="bi bi-brightness-high flex-shrink-0"></i>PROMPT DELIVERY</li>
-                <li><i class="bi bi-brightness-high flex-shrink-0"></i>CUSTOMIZED FABRICS</li>
-              </ul>
-            <a href="#" class="btn more-btn btn-danger">Learn More</a>
-          </div>
-        </div>
-
-      </div><!-- Features Item -->
-
-      <div class="row gy-4 justify-content-between features-item pt-5">
-
-        <div class="col-lg-5 d-flex align-items-center order-2 order-lg-1 col-sm-12" data-aos="fade-up" data-aos-delay="100">
-
-          <div class="content">
-            <h3 class="fw-bolder">EXPORTS</h3>
-            <p>
-                Transparent communication, top-touch quality, and timely delivery are the core values of the company providing world-class quality products
-            </p>
-            <p>Providing technical assistance to our customers beyond expectations</p>
-
-            <p>Exporting 4 million meters Fabrics per annum Exporting to the markets in USA, Mexico, Italy, Spain, Switzerland, Belgium, Turkey, Egypt, Morocco, Nigeria, Poland, Canada, Peru, France, Dubai, Columbia, Brazil, Argentina, Chile, and South-Africa.</p>
-            <p>75% of our exported Fabrics are tailor-made to cater our international customers’ needs</p>
+        <div class="row">
+            <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                &copy; <span>2024 Ajanta Universal Fabrics Limited.</span>
+            </div>
+            <div class="col-md-6 text-center text-md-end">
             
-            
-            <a href="#" class="btn more-btn btn-danger">Learn More</a>
-          </div>
-
+                 Designed By <a class="border-bottom" href="#">Reach7</a>
+            </div>
         </div>
-
-        <div class="col-lg-6 order-1 order-lg-2 p-5 rounded-3 col-sm-12" data-aos="fade-up" data-aos-delay="200">
-          <img src="images/aufl.jpg" class="img-fluid rounded-3" alt="">
-        </div>
-
-      </div><!-- Features Item -->
-
     </div>
+</div>
+<!-- Copyright End -->
+<a href="#" class="btn btn-lg  btn-lg-square rounded-circle back-to-top "><i class="fa fa-arrow-circle-up" style="font-size:48px;color:red"></i></i></a> 
 
-  </section>
+<!-- Back to Top -->
 
-
-
-<!-- Bootstrap JS and Popper.js -->
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
 </body>
 </html>
-
